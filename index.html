@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1019"><meta name="description" content="A simple page to share the latest offsets files.">
+<title>Offsets Hub</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1019;--panel:#111a27;--line:#263346;--muted:#91a0b3;--text:#edf3fa;--mint:#85f1c2;--blue:#a6c9ff}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% -20%,#1d3850 0,transparent 55%),var(--bg);color:var(--text);font:16px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;display:grid;place-items:center;padding:32px 18px}
+main{width:min(900px,100%)}.top{display:flex;align-items:center;gap:11px;color:var(--muted);font-size:13px;letter-spacing:.12em;text-transform:uppercase}.mark{width:11px;height:11px;border-radius:50%;background:var(--mint);box-shadow:0 0 18px #85f1c277}
+h1{font-size:clamp(42px,8vw,72px);line-height:1.02;letter-spacing:-.055em;margin:25px 0 14px}h1 span{color:var(--mint)}.intro{max-width:580px;color:var(--muted);font-size:17px;margin:0 0 34px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:linear-gradient(145deg,#151f2e,#101722);border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;min-height:250px;box-shadow:0 16px 50px #0003}.card-head{display:flex;align-items:center;justify-content:space-between}.tag{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);background:#9fc3ff12;border:1px solid #9fc3ff2b;padding:5px 9px;border-radius:99px}.file-icon{width:40px;height:40px;border:1px solid #ffffff16;background:#ffffff08;display:grid;place-items:center;border-radius:12px;color:var(--mint);font-weight:700;font-size:13px}.card h2{font-size:24px;margin:24px 0 7px;letter-spacing:-.025em}.card p{color:var(--muted);margin:0;font-size:14px}.card-bottom{margin-top:auto;padding-top:26px;display:flex;align-items:center;justify-content:space-between;gap:12px}.size{font-size:12px;color:#7f8da0}.button{display:inline-flex;align-items:center;gap:9px;text-decoration:none;background:var(--mint);color:#092117;padding:11px 15px;border-radius:10px;font-weight:750;font-size:14px;transition:transform .15s,filter .15s}.button:hover{transform:translateY(-2px);filter:brightness(1.08)}.button:focus-visible{outline:3px solid var(--blue);outline-offset:3px}.arrow{font-size:17px;line-height:1}
+footer{border-top:1px solid #ffffff12;margin-top:27px;padding-top:17px;color:#738197;font-size:12px;display:flex;justify-content:space-between;gap:12px}.footer-right{color:#66758b}
+@media(max-width:650px){.cards{grid-template-columns:1fr}.card{min-height:225px}footer{flex-direction:column}}
+</style>
+</head>
+<body><main>
+<div class="top"><span class="mark"></span> File sharing · HPP offsets</div>
+<h1>Offsets<span>.</span></h1>
+<p class="intro">Choose a file below to download. Share this page with anyone who needs the same offsets.</p>
+<section class="cards" aria-label="Available offsets files">
+<article class="card"><div class="card-head"><span class="tag">Complete file</span><div class="file-icon">HPP</div></div><h2>Full offsets</h2><p>The full offsets header from the first uploaded file.</p><div class="card-bottom"><span class="size">full-offsets.hpp</span><a class="button" href="full-offsets.hpp" download>Download <span class="arrow" aria-hidden="true">↓</span></a></div></article>
+<article class="card"><div class="card-head"><span class="tag">Offsets file</span><div class="file-icon">HPP</div></div><h2>Offsets</h2><p>The offsets header from the second uploaded file.</p><div class="card-bottom"><span class="size">offsets.hpp</span><a class="button" href="offsets.hpp" download>Download <span class="arrow" aria-hidden="true">↓</span></a></div></article>
+</section>
+<footer><span>Offsets Hub</span><span class="footer-right">Files are shared as provided.</span></footer>
+</main></body></html>
